@@ -1,0 +1,14 @@
+material MyQR/QR1
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture ../textures/qr_code.png
+        filtering trilinear
+      }
+    }
+  }
+}

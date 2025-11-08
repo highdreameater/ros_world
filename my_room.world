@@ -1,0 +1,180 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="my_simple_room">
+    
+    <include><uri>model://sun</uri></include>
+    <include><uri>model://ground_plane</uri></include>
+
+    <model name="south_wall">
+      <static>true</static>
+      <pose>2.1 0 1 0 0 0</pose>
+      <link name="link"><collision name="c"><geometry><box><size>4.2 0.1 2.5</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>4.2 0.1 0.91</size></box></geometry></visual></link>
+    </model>
+    <model name="north_wall">
+      <static>true</static>
+      <pose>2.1 3.1 0.5 0 0 0</pose>
+      <link name="link"><collision name="c"><geometry><box><size>4.2 0.1 2.5</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>4.2 0.1 0.91</size></box></geometry></visual></link>
+    </model>
+    <model name="west_wall">
+      <static>true</static>
+      <pose>0 1.55 1.25 0 0 1.57079</pose> 
+      <link name="link"><collision name="c"><geometry><box><size>3.1 0.1 2.5</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>3.1 0.1 0.91</size></box></geometry></visual></link>
+    </model>
+    <model name="east_wall">
+      <static>true</static>
+      <pose>4.2 1.55 -1.25 0 0 1.57079</pose> 
+      <link name="link"><collision name="c"><geometry><box><size>3.1 0.1 2.5</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>3.1 0.1 0.91</size></box></geometry></visual></link>
+    </model>
+
+    <model name="shelf_with_qrs">
+      <static>true</static> <pose>1.0 0.5 0 0 0 0</pose> 
+
+      <link name="shelf_frame">
+        <pose>0 0 0 0 0 0</pose>
+        <visual name="visual">
+          <geometry>
+            <mesh><uri>file:///home/highdreameater/worlds/models/shelf.dae</uri></mesh>
+          </geometry>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <mesh><uri>file:///home/highdreameater/worlds/models/shelf.dae</uri></mesh>
+          </geometry>
+        </collision>
+      </link>
+
+      <link name="qr_1">
+        <pose>-0.39 0.18 1.22 0 0 0</pose> 
+        
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>file:///home/highdreameater/worlds/models/qr.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>file:///home/highdreameater/worlds/materials/scripts/my_materials.material</uri>
+              <name>MyQR/QR1</name>
+            </script>
+          </material>
+        </visual>
+
+        <collision name="collision">
+           <geometry>
+            <mesh>
+              <uri>file:///home/highdreameater/worlds/models/qr.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+
+      <link name="qr_2">
+        <pose>0.39 0.18 0.87 0 0 0</pose> 
+        
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>file:///home/highdreameater/worlds/models/qr.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>file:///home/highdreameater/worlds/materials/scripts/my_materials.material</uri>
+              <name>MyQR/QR1</name>
+            </script>
+          </material>
+        </visual>
+
+        <collision name="collision">
+           <geometry>
+            <mesh>
+              <uri>file:///home/highdreameater/worlds/models/qr.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <link name="qr_3">
+        <pose>-0.39 0.18 0.52 0 0 0</pose> 
+        
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>file:///home/highdreameater/worlds/models/qr.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>file:///home/highdreameater/worlds/materials/scripts/my_materials.material</uri>
+              <name>MyQR/QR1</name>
+            </script>
+          </material>
+        </visual>
+
+        <collision name="collision">
+           <geometry>
+            <mesh>
+              <uri>file:///home/highdreameater/worlds/models/qr.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <link name="qr_4">
+        <pose>0.39 0.18 0.06 0 0 0</pose> 
+        
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>file:///home/highdreameater/worlds/models/qr.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>file:///home/highdreameater/worlds/materials/scripts/my_materials.material</uri>
+              <name>MyQR/QR1</name>
+            </script>
+          </material>
+        </visual>
+
+        <collision name="collision">
+           <geometry>
+            <mesh>
+              <uri>file:///home/highdreameater/worlds/models/qr.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      <link name="qr_5">
+        <pose>0.39 0.18 1.475 0 0 0</pose> 
+        
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>file:///home/highdreameater/worlds/models/qr.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <script>
+              <uri>file:///home/highdreameater/worlds/materials/scripts/my_materials.material</uri>
+              <name>MyQR/QR1</name>
+            </script>
+          </material>
+        </visual>
+
+        <collision name="collision">
+           <geometry>
+            <mesh>
+              <uri>file:///home/highdreameater/worlds/models/qr.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+      
+    </model>
+
+  </world>
+</sdf>
