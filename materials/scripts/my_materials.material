@@ -12,3 +12,33 @@ material MyQR/QR1
     }
   }
 }
+
+material MyQR/QR2
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture ../textures/git.png
+        filtering trilinear
+      }
+    }
+  }
+}
+
+material MyQR/QR3
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture ../textures/insta.png
+        filtering trilinear
+      }
+    }
+  }
+}
